@@ -6,8 +6,7 @@ window.addEventListener("devicemotion", on_device_motion);
 var canvas = document.getElementById("id_canvas");
 var ctx = canvas.getContext("2d");
 
-var gamma = 0;
-var beta = 0;
+var unghiuri = {gamma:0; beta:0);
 
 setInterval(deseneaza_cerc, 40, gamma, beta);
 
@@ -16,8 +15,9 @@ function deseneaza_cerc()//unghi1, unghi2)
 {
 		ctx.clearRect(0, 0, 400, 400);
 		
-		ctx.rect(0, 0, 400, 400);
-		ctx.stroke();
+		//ctx.rect(0, 0, 400, 400);
+		//ctx.stroke();
+	 	ctx.strokeRect(0, 0, 400, 400);
 		
 		ctx.beginPath();
 		ctx.arc(200 + gammma * 200 / 90, 200 + beta * 200 / 90, 20, 0, 2 * Math.PI);
