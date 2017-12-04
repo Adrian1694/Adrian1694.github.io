@@ -11,7 +11,7 @@ var unghiuri = {gamma:0, beta:0};
 setInterval(deseneaza_cerc, 40, gamma, beta);
 
 //-----------------------------------------------------
-function deseneaza_cerc()//unghi1, unghi2)
+function deseneaza_cerc(u)
 {
 		ctx.clearRect(0, 0, 400, 400);
 		
