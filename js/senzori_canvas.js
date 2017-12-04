@@ -6,7 +6,7 @@ window.addEventListener("devicemotion", on_device_motion);
 var canvas = document.getElementById("id_canvas");
 var ctx = canvas.getContext("2d");
 
-var unghiuri = {gamma:0; beta:0);
+var unghiuri = {gamma:0, beta:0);
 
 setInterval(deseneaza_cerc, 40, gamma, beta);
 
