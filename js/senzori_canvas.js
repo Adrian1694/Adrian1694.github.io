@@ -20,7 +20,7 @@ function deseneaza_cerc(u)
 	 	ctx.strokeRect(0, 0, 400, 400);
 		
 		ctx.beginPath();
-		ctx.arc(200 + u.gammma * 200 / 90, 200 + u.beta * 200 / 90, 20, 0, 2 * Math.PI);
+		ctx.arc(200 + u.gamma * 200 / 90, 200 + u.beta * 200 / 90, 20, 0, 2 * Math.PI);
 		ctx.fillStyle = "#FF0000";
 		//ctx.fill();
 		ctx.strokeStyle = "#00FF00";
