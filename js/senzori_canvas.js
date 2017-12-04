@@ -31,14 +31,14 @@ function deseneaza_cerc()//unghi1, unghi2)
 function on_device_orientation(e)
 {
 	//deseneaza_cerc(e.gamma, e.beta);
-	gamma = e.gamma;
-	beta = e.beta;
+	unghiuri.gamma = e.gamma;
+	unghiuri.beta = e.beta;
 }
 //-----------------------------------------------------
 function on_device_motion(e)
 {
-	beta = Math.atan(e.accelerationIncludingGravity.y / e.accelerationIncludingGravity.z) * 180 / Math.PI;
-	gamma = -Math.atan(e.accelerationIncludingGravity.x / e.accelerationIncludingGravity.z) * 180 / Math.PI;
+	unghiuri.beta = Math.atan(e.accelerationIncludingGravity.y / e.accelerationIncludingGravity.z) * 180 / Math.PI;
+	unghiuri.gamma = -Math.atan(e.accelerationIncludingGravity.x / e.accelerationIncludingGravity.z) * 180 / Math.PI;
 	
 	//deseneaza_cerc(gamma, beta);
 }
