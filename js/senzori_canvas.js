@@ -8,7 +8,7 @@ var ctx = canvas.getContext("2d");
 
 var unghiuri = {gamma:0, beta:0};
 
-setInterval(deseneaza_cerc, 40, gamma, beta);
+setInterval(deseneaza_cerc, 40, unghiuri);
 
 //-----------------------------------------------------
 function deseneaza_cerc(u)
@@ -20,7 +20,7 @@ function deseneaza_cerc(u)
 	 	ctx.strokeRect(0, 0, 400, 400);
 		
 		ctx.beginPath();
-		ctx.arc(200 + gammma * 200 / 90, 200 + beta * 200 / 90, 20, 0, 2 * Math.PI);
+		ctx.arc(200 + u.gammma * 200 / 90, 200 + u.beta * 200 / 90, 20, 0, 2 * Math.PI);
 		ctx.fillStyle = "#FF0000";
 		//ctx.fill();
 		ctx.strokeStyle = "#00FF00";
