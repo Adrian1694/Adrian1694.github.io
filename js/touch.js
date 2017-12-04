@@ -5,6 +5,7 @@ var context = canvas.getContext("2d");
 
 canvas.addEventListener("touchstart", on_start_touch);
 
+var lista_culori = ["#FF0000", "#00FF00", "#0000FE", "#FFFF00", "#FF00FF", "FFFFFF"];
 //.......................................................
 function on_start_touch(e)
 {
@@ -13,6 +14,7 @@ function on_start_touch(e)
 	for (var i = 0; i<touches.length; i++) {
 		context.beginPath();
 		context.arc(touches.item(i).pageX, touches.item(i).pageY, 20, 0, 2*Math.PI);
+		context.strokeStyle = lista_culori[i];
 		context.stroke();
 	}
 
