@@ -1,4 +1,4 @@
-document.getElementById("id_business_version").innerHTML = "Business version = 2017.12.14.0";
+document.getElementById("id_business_version").innerHTML = "Business version = 2017.12.14.1";
 
 navigator.geolocation.getCurrentPosition(on_position_success, on_position_failure);
 
@@ -7,7 +7,7 @@ navigator.geolocation.getCurrentPosition(on_position_success, on_position_failur
 function on_position_success(e)
 {
 	document.getElementById("id_lat").innerHTML = e.coords.latitude;
-	document.getElementById("id_long").innerHTML = e.coords.logitudine;
+	document.getElementById("id_long").innerHTML = e.coords.longitude;
 
 
 }
