@@ -1,4 +1,4 @@
-document.getElementById("id_business_version").innerHTML = "Business version = 2017.12.04.0";
+document.getElementById("id_business_version").innerHTML = "Business version = 2017.12.14.0";
 
 var canvas = document.getElementById("id_canvas");
 var context = canvas.getContext("2d");
@@ -10,7 +10,7 @@ var lista_culori = ["#FF0000", "#00FF00", "#0000FE", "#FFFF00", "#FF00FF", "FFFF
 function on_start_touch(e)
 {
 	
-	var touches = e.changedTouches;
+	var touches = e.Touches;
 	for (var i = 0; i<touches.length; i++) {
 		context.beginPath();
 		context.arc(touches.item(i).pageX, touches.item(i).pageY, 20, 0, 2*Math.PI);
