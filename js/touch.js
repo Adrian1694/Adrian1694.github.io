@@ -10,8 +10,9 @@ var lista_culori = ["#FF0000", "#00FF00", "#0000FE", "#FFFF00", "#FF00FF", "FFFF
 function on_start_touch(e)
 {
 	
-	var touches = e.Touches;
-	for (var i = 0; i<touches.length; i++) {
+	var touches = e.touches;
+	for (var i = 0; i<touches.length; i++) 
+	{
 		context.beginPath();
 		context.arc(touches.item(i).pageX, touches.item(i).pageY, 20, 0, 2*Math.PI);
 		context.strokeStyle = lista_culori[i];
