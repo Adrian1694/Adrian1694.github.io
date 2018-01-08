@@ -15,7 +15,7 @@ function on_position_success(e)
 					e.coords.latitude +","+ e.coords.longitude +
 					"&zoom=15" +
 					"&size=400x300" +
-					"key=AIzaSyAjpdbOR6jJN1R2vDbST_vad43pVGnnNxg"
+					"&key=AIzaSyAjpdbOR6jJN1R2vDbST_vad43pVGnnNxg"
 					;
 	document.getElementById("id_img").src = map_str;
 
