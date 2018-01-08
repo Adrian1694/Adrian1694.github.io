@@ -1,4 +1,4 @@
-document.getElementById("id_business_version").innerHTML = "Business version = 2018.01.08.7";
+document.getElementById("id_business_version").innerHTML = "Business version = 2018.01.08.8";
 
 navigator.geolocation.getCurrentPosition(on_position_success, on_position_failure);
 
@@ -16,6 +16,7 @@ function on_position_success(e)
 					"&zoom=15" +
 					"&size=400x300" +
 					"&key=AIzaSyCVzDb0EtCrKxSOhCwYJRVWaRe-ooTw3-A"
+					"&markers=color:blue|label:Apor"+ e.coords.latitude +","+ e.coords.longitude
 					;
 	document.getElementById("id_img").src = map_str;
 
