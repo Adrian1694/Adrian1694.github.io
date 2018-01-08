@@ -1,4 +1,4 @@
-document.getElementById("id_business_version").innerHTML = "Business version = 2018.01.08.14";
+document.getElementById("id_business_version").innerHTML = "Business version = 2018.01.08.15";
 
 navigator.geolocation.getCurrentPosition(on_position_success, on_position_failure);
 
@@ -13,11 +13,11 @@ function on_position_success(e)
 	
 	var map_str = "https://maps.googleapis.com/maps/api/staticmap?"+
 					"center="+ e.coords.latitude +","+ e.coords.longitude +
-					"&zoom=13" +
+					"&zoom=15" +
 					"&size=400x300" +
 					"&key=AIzaSyCVzDb0EtCrKxSOhCwYJRVWaRe-ooTw3-A"+
 					"&markers=color:blue|label:A|"+ e.coords.latitude +","+ e.coords.longitude+
-					"&path=color:red|"+ e.coords.latitude +","+ e.coords.longitude+"|Sala Unirii"
+					"&path=color:red|"+ e.coords.latitude +","+ e.coords.longitude+"|Sala Unirii Alba Iulia"
 					;
 	document.getElementById("id_img").src = map_str;
 
