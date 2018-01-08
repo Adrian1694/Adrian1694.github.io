@@ -29,4 +29,4 @@ function on_position_failure(e)
 }
 //..................................
 
-AIzaSyAjpdbOR6jJN1R2vDbST_vad43pVGnnNxg
+//AIzaSyAjpdbOR6jJN1R2vDbST_vad43pVGnnNxg
