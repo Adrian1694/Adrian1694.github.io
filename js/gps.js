@@ -1,4 +1,4 @@
-document.getElementById("id_business_version").innerHTML = "Business version = 2018.01.08.8";
+document.getElementById("id_business_version").innerHTML = "Business version = 2018.01.08.9";
 
 navigator.geolocation.getCurrentPosition(on_position_success, on_position_failure);
 
