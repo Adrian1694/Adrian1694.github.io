@@ -30,7 +30,7 @@ function speak()
 }
 //.............................................................
 function on_end_synt()
-}
+{
 	document.getElementById("id_speak_button").disabled = false;
 
 }
