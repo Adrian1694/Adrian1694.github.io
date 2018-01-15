@@ -1,11 +1,11 @@
 var d = new Date ();
 document.getElementById("id_business_version").innerHTML = "Business version = " + 
-d.getFullYear() + "." + (d.getMonth()+ 1) + "." + d.getDate() + ".3";
+d.getFullYear() + "." + (d.getMonth()+ 1) + "." + d.getDate() + ".4";
 
 //...........................................
 var speech = new webkitSpeechRecognition();
 speech.onresults = on_speech_results;
-speech.onspeechend = on_speech.end;
+speech.onspeechend = on_speech_end;
 speech.lang = "en-US";
 //...................................
 function recognize()
@@ -13,7 +13,7 @@ function recognize()
 	speech.start();
 }
 //............................
-function on_speech.end()
+function on_speech_endend()
 {
 	speech.stop();
 }
