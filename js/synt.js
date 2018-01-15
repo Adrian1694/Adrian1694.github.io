@@ -24,7 +24,14 @@ function speak()
 	var enunt = new SpeechSynthesisUtterance();
 	enunt.lang = "en-US";
 	enunt.text = document.getElementById ("id_text").value;
-	
+	enunt.onend = on_end_synt;
+	document.getElementById("id_speak_button").disabled = true;
 	synt.speak(enunt);
+}
+//.............................................................
+function on_end_synt()
+}
+	document.getElementById("id_speak_button").disabled = false;
+
 }
 //.............................................................
