@@ -13,7 +13,7 @@ function recognize()
 	speech.start();
 }
 //............................
-function on_speech_endend()
+function on_speech_end()
 {
 	speech.stop();
 }
