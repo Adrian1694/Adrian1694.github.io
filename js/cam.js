@@ -1,10 +1,10 @@
 var d = new Date ();
 document.getElementById("id_business_version").innerHTML = "Business version = " + 
-d.getFullYear() + "." + (d.getMonth()+ 1) + "." + d.getDate() + ".4";
+d.getFullYear() + "." + (d.getMonth()+ 1) + "." + d.getDate() + ".5";
 
 //...........................................
 
-var constraints = {audio: true, video: true};
+var constraints = {audio: true, video: { facingMode: "environment" }};
 
 navigator.mediaDevices.getUserMedia(constraints)
 .then(on_cam)
