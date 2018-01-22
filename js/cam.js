@@ -6,7 +6,7 @@ d.getFullYear() + "." + (d.getMonth()+ 1) + "." + d.getDate() + ".6";
 
 var constraints = (audio: true, video: true);
 
-navigator.MediaDevices.getUserMedia(constraints)
+navigator.mediaDevices.getUserMedia(constraints)
 .then(on_cam())
 .catch(on_error());
 
