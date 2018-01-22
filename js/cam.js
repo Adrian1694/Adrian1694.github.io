@@ -11,7 +11,7 @@ navigator.mediaDevices.getUserMedia(constraints)
 .catch(on_error);
 
 var video = document.getElementById("id_video");
-
+video.addEventListener("touchstart", on_touch_video);
 //............................................
 function on_cam(stream)
 {
@@ -23,3 +23,10 @@ function on_error(e)
 	alert("Error: cannot connect to camera!");
 }
 //...........................................
+function on_touch_video(e)
+{
+	var canvas = document.getElementById ("id_img");
+	var ctx = canvas.getContext("2d");
+	ctx.drawImage(video, 0, 0);
+	
+}
