@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 
 <html>
-
+<head>
+<style>
+.button {
+    background-color: #00008B; /* DarkBlue */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button {padding: 14px 40px;}
+</style>
+</head>
 <body>
 
 <p>UI version = 2018.01.29.0</p>
 <p id = "id_business_version"></p>
 
-<button onclick="playVid()" type="button">Play Video</button>
-<button onclick="pauseVid()" type="button">Pause Video</button><br> 
+<button class="button button1">14px 40px</button>
+<button class="button button2">14px 40px</button>
+
+<button onclick="playVid()" type="button1">Play Video</button>
+<button onclick="pauseVid()" type="button2">Pause Video</button><br> 
 
 <video id="ktm_video" width="720" height="576">
 
